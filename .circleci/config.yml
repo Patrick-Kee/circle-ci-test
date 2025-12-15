@@ -4,9 +4,9 @@ jobs:
   build:
     docker:
       - image: cimg/node:14.10.1 (***Always a space between dash and command)
-          steps:
-            - checkout
-            - run
-                command: npm install
-            - run
-                command: npm test
+    steps:
+      - checkout
+      - run
+          command: npm install
+      - run
+          command: npm test
